@@ -1,9 +1,10 @@
-# Script Name   =   backupPictures.ps1
-# Author        =   Snickasaurus
-# Date          =   20170201
-# Purpose       =   Use 7zip to archive "Pictures" directory
-# Usage         =   ./backup-Pictures.ps1
-# Requirements  =   7zip, backup location
+<#
+    date            -   2017/02/01
+    purpose         -   Use 7zip to archive "Pictures" directory
+    usage           -   backup-Pictures.ps1
+    requirements    -   7zip, backup location
+    author          -   Snickasaurus
+#>
 
 # Variables
 $TheTargetDirectory = "C:\Users\Me\Pictures"                                # Archive target
