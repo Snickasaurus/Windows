@@ -7,13 +7,13 @@
 #>
 
 # Variables
-$TheTargetDirectory = "C:\Users\Me\Pictures"                                # Archive target
-$TheBackupLocation = "\\freenas.local\Backups\Windows\GAMING\Pictures\"     # Archive location
-$RententionPolicy = "20"                                                    # Number of Retention Units back to delete
-$RetentionUnit = "days"                                                     # This can be set to months/weeks/days/hours
-$CurrentDateTime = Get-Date -Format "yyyyMMdd-HHmmss"                       # Create a YearMonthDay-HourMinuteSecond time stamp
-$NewFileName = "Pictures-"+$CurrentDateTime+".tar"                          # Set the archive name
-$Logging = $TheBackupLocation + $NewFileName                                # Set the logging directory
+$TheTargetDirectory = "C:\Users\Me\Pictures"                                    # Archive target
+$TheBackupLocation = "\\freenas\Backups\Windows\$Env:ComputerName\Pictures\"    # Archive location
+$RententionPolicy = "20"                                                        # Number of Retention Units back to delete
+$RetentionUnit = "days"                                                         # This can be set to months/weeks/days/hours
+$CurrentDateTime = Get-Date -Format "yyyyMMdd-HHmmss"                           # Create a YearMonthDay-HourMinuteSecond time stamp
+$NewFileName = "Pictures-"+$CurrentDateTime+".tar"                              # Set the archive name
+$Logging = $TheBackupLocation + $NewFileName                                    # Set the logging directory
 
 # Function
 function Create-7zip([String] $aDirectory, [String] $aZipfile){
