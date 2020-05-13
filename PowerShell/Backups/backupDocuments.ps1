@@ -1,5 +1,5 @@
 <#
-    date            -   20170201
+    date            -   2017/02/01
     purpose         -   Use 7zip to archive "Documents" directory
     usage           -   ./backup-Documents.ps1
     requirements    -   7zip, backup location
